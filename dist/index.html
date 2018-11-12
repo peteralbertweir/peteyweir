@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Peter Albert Weir</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Description" lang="en" content="I'm just a D shy of weird.">
+		<meta name="robots" content="index, follow">
+		<meta itemprop="name" content="Peter A. Weir">
+		<meta itemprop="description" content="I'm just a D shy of weird.">
+		<meta itemprop="image" content="http://www.peteyweir.com/images/about/peter-weir.jpg">
+		<meta name="twitter:card" content="Peter A. Weir">
+		<meta name="twitter:site" content="@peteralbertweir">
+		<meta name="twitter:title" content="Peter A. Weir">
+		<meta name="twitter:description" content="I'm just a D shy of weird.">
+		<meta name="twitter:creator" content="@peteralbertweir">
+		<meta name="twitter:image:src" content="http://www.peteyweir.com/images/about/peter-weir.jpg">
+		<meta property="og:title" content="Peter A. Weir" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://www.peteyweir.com" />
+		<meta property="og:image" content="http://www.peteyweir.com/images/about/peter-weir.jpg" />
+		<meta property="og:description" content="I'm just a D shy of weird." />
+		<meta property="og:site_name" content="Peter Albert Weir" />
+		<meta property="article:section" content="website" />
+		<meta property="article:tag" content="website" />
+		<link rel="shortcut icon" href="images/icons/favicon-alt.png" type="image/x-icon">
+		<link rel="icon" href="images/icons/favicon-alt.png" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script:700" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/styles.min.css">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+		<script src="https://use.fontawesome.com/3ec813b934.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+		<script src="js/main.min.js"></script>
+		<script>
+			$(function(){
+				$.stellar({
+					horizontalScrolling: false,
+					verticalOffset: 200
+				});
+			});
+
+			$(document).ready(function() {
+				$('.iframe-popup').magnificPopup({
+					disableOn: 700,
+					type: 'iframe',
+					mainClass: 'mfp-fade',
+					removalDelay: 160,
+					preloader: false,
+					fixedContentPos: false
+				});
+
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+
+					fixedContentPos: false,
+					fixedBgPos: true,
+
+					overflowY: 'auto',
+
+					closeBtnInside: true,
+					preloader: false,
+
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+				});
+
+				// Content Gallery
+
+				$('.skillToggle').click(function() {
+
+				  var items = [];
+				  $( $(this).attr('href') ).find('.slide').each(function() {
+				    items.push( {
+				      src: $(this)
+				    } );
+				  });
+
+				  $.magnificPopup.open({
+				    items:items,
+				    gallery: {
+				      enabled: true
+				    }
+				  });
+				});
+
+			});
+		</script>
+		<script>
+		$(document).ready(function() {
+
+		$('a.btn-gallery').on('click', function(event) {
+			event.preventDefault();
+
+			var gallery = $(this).attr('href');
+
+			$(gallery).magnificPopup({
+		  delegate: 'a',
+				type:'image',
+				gallery: {
+					enabled: true
+				}
+			}).magnificPopup('open');
+		});
+
+		});
+		</script>
+		<script>
+			scrollme.init_if = function() { return( $( window ).width() > 800 ); }
+		</script>
+	</head>
+	<body>
+        <div class="container">
+
+			<div class="panel scrollme" id="home">
+			<!-- <div class="overlay animateme" data-stellar-background-ratio="0.65" data-when="exit" data-from="0" data-to="0.95" data-opacity="0" data-translatex="0" data-rotatez="0">&nbsp;</div> -->
+				<header class="animateme" data-when="exit" data-from="0" data-to="0.95" data-opacity="0" data-translatex="0" data-rotatez="0">
+					<hgroup>
+						<h1>Peter A. Weir</h1>
+						<h2><span>The <strong>D</strong> is silent</span></h2>
+					</hgroup>
+					<nav class="main-menu">
+						<ul class="grid">
+							<li><a class="smooth" href="#about">About</a></li>
+							<li><a class="smooth" href="#work">Work</a></li>
+							<li><a class="smooth" href="#services">Services</a></li>
+							<li><a class="smooth" href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+				<div class="graph animateme" data-when="exit" data-from="0" data-to="0.95" data-opacity="0" data-translatex="0" data-rotatez="0">
+					<div style="position:relative; height:0; padding-bottom:56.25%; width:100%"><iframe style="position:absolute; top:-60px; left:0; width:100%; height:100%;" src="https://media.flixel.com/cinemagraph/hqjq4we4cfc0g6k1ijxa?hd=true" frameborder="0" allowfullscreen></iframe></div>
+				</div>
+			</div>
+			<div class="content" id="about">
+
+				<div class="panel">
+					<div class="wrapper wrapper-xs scrollme">
+						<div class="wrap animateme" data-when="view" data-from="0.72" data-to="0" data-opacity="0" data-translatex="-310" data-rotatez="0">
+							<div class="crop" id="profile">
+								<img src="images/about/peter-weir_2018.jpg" />
+							</div>
+							<h2>Hello there.</h2>
+							<p>The name's <strong>Peter Albert Weir</strong>, but my friends call me Bert. Well, that’s not entirely true. One guy does (thanks Steve), and if I have learned anything, it's that creating your own nickname is really, really difficult. What about Petey?</p>
+							<p>At any rate—I was born in Montreal, raised in Victoria, BC, and have most recently resided in <strong>Toronto</strong>, where I completed a <strong>Master of Digital Media</strong> at Ryerson University.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel product">
+					<div class="wrapper wrapper-xs scrollme">
+						<div class="wrap animateme" data-when="view" data-from="0.62" data-to="0" data-opacity="0" data-translatex="310" data-rotatez="0">
+							<h3>What I do.</h3>
+							<p>I'm into <strong>design</strong> and have a background in <strong>digital marketing</strong> and <strong>media production</strong>. I also enjoy <strong>writing</strong>, both critically and creatively, and do a little acting every now and then.</p>
+							<p>It may seem like my interests are all over the place, but, someday somehow, I will figure out a way of synthesizing them into one glorious pursuit.</p>
+						</div>
+						<div class="wrap animateme" data-when="view" data-from="0.62" data-to="0" data-opacity="0" data-translatex="310" data-rotatez="0">
+							<img class="section-icon" src="images/icons/creative-icon-alt.png" />
+						</div>
+					</div>
+				</div>
+
+				<div class="panel">
+					<div class="wrapper scrollme">
+						<div class="wrap animateme" data-when="view" data-from="0.72" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0" data-scale="1.7">
+							<h3>Some fast facts.</h3>
+							<ul class="grid" id="facts">
+								<li>
+									<span><i class="fi flaticon-twitter-logo-silhouette"></i></span>
+									<sup><strong>19.8K</strong> followers</sup>
+								</li>
+								<li>
+									<span class="icon-lg"><i class="fi flaticon-bethlehems-tower"></i></span>
+									<sup><strong>Portuguese</strong> descent</sup>
+								</li>
+								<li>
+									<span><i class="fi flaticon-instagram-logo"></i></span>
+									<sup><strong>Chair</strong>-themed account</sup>
+								</li>
+								<li>
+									<span class="icon-lg"><i class="fi flaticon-airship-side-view"></i></span>
+									<sup><strong>Airship</strong> enthusiast</sup>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel product" id="other-stuff">
+					<div class="wrapper wrapper-xs scrollme">
+						<div class="wrap animateme" data-when="view" data-from="0.62" data-to="0" data-opacity="0" data-translatex="-310" data-rotatez="0">
+							<img class="section-icon" src="images/icons/dune-icon-alt.png" />
+						</div>
+						<div class="wrap animateme" data-when="view" data-from="0.62" data-to="0" data-opacity="0" data-translatex="310" data-rotatez="0">
+							<h3>Other stuff.</h3>
+							<p>I’m happiest when hanging out with friends, perusing the depths of IMDb, crushing podcasts, and collaborating on ideas. I believe that heaven is a place on Earth and that place is the Oregon Dunes.</p>
+							<p>For real—I just wanna work on great things and share some laughs along the way.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel" id="cinemagraph">
+					<section class="title scrollme animateme" data-when="view" data-from="1" data-to="0.15" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<h3>Here I am enjoying a cup of tea.</h3>
+					</section>
+					<div class="wrapper">
+						<div class="wrap scrollme">
+							<div class="crop animateme" data-when="view" data-from="0.55" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0" data-scale="0.35">
+								<div class="cinemagraph"><iframe src="https://media.flixel.com/cinemagraph/97hf1ydq4k32e5dw7um1?hd=true" frameborder="0" allowfullscreen></iframe></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="content" id="work">
+				<section class="title scrollme animateme" data-when="view" data-from="1" data-to="0.15" data-opacity="0" data-translatex="0" data-rotatez="0">
+					<h2>Things that I've done.</h2>
+				</section>
+				<main class="feed">
+					<!--TEST ROW -->
+					<div class="item item-max scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry">
+							<h2 class="post-title">
+								<span class="mod">Birthday Movie Posters</span>
+								<sup>Graphic Design / Copy</sup>
+							</h2>
+							<a href="#gallery-1" class="mask-self btn-gallery">&nbsp;</a>
+						</div>
+							<img class="landscape" src="images/work/design/birthday_posters.png" />
+					</div>
+
+					<!-- Row 1 -->
+					<div class="item item-md scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry title-xl">
+							<h2 class="post-title">
+								<span class="mod">How Being Unconventional<br />Can Lead to Success</span>
+								<sup>Blog Post</sup>
+							</h2>
+							<a class="mask" href="http://engage.imprintmg.com/engage/achieve-success-by-being-unconventional-10168"></a>
+						</div>
+						<img src="images/work/blog/achieve-success-unconventional.jpg" />
+					</div>
+					<div class="item item-md scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry">
+							<h2 class="post-title">
+								<span class="mod">New Fonts From Unlikely Designers</span>
+								<sup>Blog Post</sup>
+							</h2>
+							<a class="mask" href="http://engage.imprintmg.com/engage/new-fonts-by-unlikely-authors-10007"></a>
+						</div>
+						<img src="images/work/blog/homeless-fonts.jpg" />
+					</div>
+					<!-- Row 2 -->
+					<div class="item scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry">
+							<h2 class="post-title">
+								<span class="mod">Hot Water Frog Prince</span>
+								<sup>Web Design</sup>
+							</h2>
+							<a class="mask" href="http://hotwaterfrogprince.ca/"></a>
+						</div>
+						<img src="images/work/web/HWFP-alt.jpg" />
+					</div>
+					<div class="item item-lg scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry title-xl">
+							<h2 class="post-title">
+								<span class="mod">What's the Weirdest Thing That<br />Has Ever Happened to You?</span>
+								<sup>Blog Post</sup>
+							</h2>
+							<a class="mask" href="https://www.quora.com/What%E2%80%99s-the-creepiest-thing-that-has-ever-happened-to-you-or-creepiest-thing-you%E2%80%99ve-ever-seen/answer/Peter-Weir-3"></a>
+						</div>
+						<img class="landscape" src="images/work/blog/weirdest-thing-that-ever-happened.jpeg" />
+					</div>
+
+					<!-- Row 3 -->
+					<div class="item item-md scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry">
+							<h2 class="post-title">
+								<span class="mod">The History of Cinemagraphs</span>
+								<sup>Blog Post</sup>
+							</h2>
+							<a class="mask" href="http://blog.flixel.com/history-of-cinemagraphs/"></a>
+						</div>
+						<img class="landscape" src="images/work/blog/history-of-cinemagraphs.png" />
+					</div>
+					<div class="item item-md scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry">
+							<h2 class="post-title">
+								<span class="mod">Cinemagraphs vs. GIFs</span>
+								<sup>Blog Post</sup>
+							</h2>
+							<a class="mask" href="http://blog.flixel.com/cinemagraphs-vs-gifs/"></a>
+						</div>
+						<img src="images/work/blog/cinemagraphs-vs-gifs.jpg" />
+					</div>
+
+					<!-- Row 4 -->
+					<div class="item scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry title-xl">
+							<h2 class="post-title">
+								<span class="mod">6 Styles of<br />Cinemagraphs</span>
+								<sup>Blog Post</sup>
+							</h2>
+							<a class="mask" href="http://blog.flixel.com/6-cinemagraph-examples/"></a>
+						</div>
+						<img src="images/work/blog/photography-styles.jpg" />
+					</div>
+
+					<div class="item item-lg scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry">
+							<h2 class="post-title">
+								<span class="mod">7 Instagram Tips to Get More Followers</span>
+								<sup>Blog Post</sup>
+							</h2>
+							<a class="mask" href="http://blog.flixel.com/7-instagram-tips-to-get-more-followers/"></a>
+						</div>
+						<img src="images/work/blog/instagram-tips.png" />
+					</div>
+					<!-- Row 5 -->
+					<div class="item scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry">
+							<h2 class="post-title">
+								<span class="mod">Cheer Up, Alistair Blu</span>
+								<sup>Artist Interview / Blog Post</sup>
+							</h2>
+							<a class="mask" href="http://bondardigital.com/blog/cheer-up-alistair-blu"></a>
+						</div>
+						<img src="images/work/blog/cheer-up-alistair-blu.jpg" />
+					</div>
+
+					<div class="item scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry title-xl">
+							<h2 class="post-title">
+								<span class="mod">The Economics<br />of Nostalgia</span>
+								<sup>Blog Post</sup>
+							</h2>
+							<a class="mask" href="http://bondardigital.com/blog/the-economics-of-nostalgia"></a>
+						</div>
+						<img src="images/work/blog/the-economics-of-nostalgia.jpg" />
+					</div>
+
+					<div class="item scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry">
+							<h2 class="post-title">
+								<span class="mod">Feelin' Simple</span>
+								<sup>Music Video</sup>
+							</h2>
+							<a class="mask" href="https://www.youtube.com/watch?v=fOyWXr0Gru0"></a>
+						</div>
+						<img src="images/work/video/feelin-simple.jpg" />
+					</div>
+
+					<!-- Row 6 -->
+					<div class="item item-lg scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry">
+							<h2 class="post-title">
+								<span class="mod">Lighter Than Air</span>
+								<sup>Branding / Web Design</sup>
+							</h2>
+							<a class="mask" href="http://lighterair.com/"></a>
+						</div>
+						<img class="landscape" src="images/work/web/LTA-logo.png" />
+					</div>
+					<div class="item scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry title-xl">
+							<h2 class="post-title">
+								<span class="mod">Ding Launch</span>
+								<sup>Press Release</sup>
+							</h2>
+							<a class="mask" href="https://www.shareresults.com/pressroom/ding-launches-affiliate-program-with-share-results/"></a>
+						</div>
+						<img src="images/work/copy/ding-press-release.jpg" />
+					</div>
+
+					<!-- Row 7 -->
+					<div class="item item-md scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry">
+							<h2 class="post-title">
+								<span class="mod">Crafting the Live Experience</span>
+								<sup>Blog Post</sup>
+							</h2>
+							<a class="mask" href="http://bondardigital.com/blog/crafting-the-live-experience"></a>
+						</div>
+						<img src="images/work/blog/crafting-the-live-experience.jpg" />
+					</div>
+					<div class="item item-md scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry">
+							<h2 class="post-title">
+								<span class="mod">Tapshare</span>
+								<sup>Branding / Web Design</sup>
+							</h2>
+							<a class="mask" href="http://tapshare.ca/"></a>
+						</div>
+						<img src="images/work/web/tapshare.png" />
+					</div>
+
+					<!-- Row 8 -->
+					<div class="item scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry">
+							<h2 class="post-title">
+								<span class="mod">Boisterous</span>
+								<sup>Experimental Short</sup>
+							</h2>
+							<a class="mask" href="https://www.youtube.com/watch?v=ArvNpdTXWNs"></a>
+						</div>
+						<img src="images/work/video/boisterous-screenshot.png" />
+					</div>
+
+					<div class="item scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry">
+							<h2 class="post-title">
+								<span class="mod">La Presse 3D</span>
+								<sup>Promo Material / Copy</sup>
+							</h2>
+							<a class="mask-self iframe-popup" href="inc/content/la-presse-3d-promo-flyers.pdf"></a>
+						</div>
+						<img class="landscape" src="images/work/copy/la-presse-3d-promo-flyers.png" />
+					</div>
+
+					<div class="item scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry title-xl">
+							<h2 class="post-title">
+								<span class="mod">Marketing Agencies<br />in the Year 2020</span>
+								<sup>Blog Post</sup>
+							</h2>
+							<a class="mask" href="https://www.shareresults.com/blog/marketing-agencies-in-the-year-2020-part-1/"></a>
+						</div>
+						<img src="images/work/blog/marketing-agencies-in-the-year-2020.png" />
+					</div>
+
+					<!-- Row 9 -->
+					<div class="item scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry title-xl">
+							<h2 class="post-title">
+								<span class="mod">The Deathly Ills<br />Prep Debut Album</span>
+								<sup>Blog Post / PR</sup>
+							</h2>
+							<a class="mask" href="http://bondardigital.com/blog/the-deathly-ills-prep-debut-album"></a>
+						</div>
+						<img src="images/work/copy/the-deathly-ills-prep-debut-album.jpg" />
+					</div>
+
+					<div class="item item-lg scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry">
+							<h2 class="post-title">
+								<span class="mod">The Misplaced Optimism of the Doomed</span>
+								<sup>Blog Post</sup>
+							</h2>
+							<a class="mask" href="http://bondardigital.com/blog/the-misplaced-optimism-of-the-doomed"></a>
+						</div>
+						<img class="landscape" src="images/work/blog/the-misplaced-optimism-of-the-doomed.png" />
+					</div>
+
+					<!-- Row 10 -->
+					<div class="item item-md scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry">
+							<h2 class="post-title">
+								<span class="mod">Bondar Digital</span>
+								<sup>Web Design</sup>
+							</h2>
+							<a class="mask" href="http://bondardigital.com/"></a>
+						</div>
+						<img class="landscape" src="images/work/web/bondar.png" />
+					</div>
+
+					<div class="item item-md scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry title-xl">
+							<h2 class="post-title">
+								<span class="mod">avroARROW x NOREMIXES</span>
+								<sup>Press Release</sup>
+							</h2>
+							<a class="mask" href="http://bondardigital.com/blog/avroarrow-releases-new-ep-via-noremixes-banner"></a>
+						</div>
+						<img class="landscape" src="images/work/copy/avroarrow-releases-ambient-ep-via-noremixes-banner.jpg" />
+					</div>
+
+					<!-- Row 11 -->
+					<div class="item scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry title-xl">
+							<h2 class="post-title">
+								<span class="mod">Alistair Blu<br />Song Premiere</span>
+								<sup>Press Release</sup>
+							</h2>
+							<a class="mask" href="http://bondardigital.com/blog/alistair-blu-premieres-new-song-from-upcoming-ep"></a>
+						</div>
+						<img class="landscape" src="images/work/copy/alistair-blu-premieres-new-song-from-upcoming-ep.jpg" />
+					</div>
+
+					<div class="item scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry">
+							<h2 class="post-title">
+								<span class="mod">Robot Rock</span>
+								<sup>Music Video</sup>
+							</h2>
+							<a class="mask" href="https://www.youtube.com/watch?v=l3aAdqRQ5OU"></a>
+						</div>
+						<img src="images/work/video/robot-rock-screenshot.png" />
+					</div>
+
+					<div class="item scrollme animateme" data-when="enter" data-from="0.89" data-to="0" data-opacity="0" data-translatex="0" data-rotatez="0">
+						<div class="entry">
+							<h2 class="post-title">
+								<span class="mod">Pacer's Silhouettes EP</span>
+								<sup>Press Release</sup>
+							</h2>
+							<a class="mask" href="http://bondardigital.com/blog/pacer-readies-debut-effort-silhouettes-ep"></a>
+						</div>
+						<img src="images/work/copy/pacer-readies-debut-effort-silhouettes-ep.jpg" />
+					</div>
+
+				</main>
+			</div>
+
+			<!-- Services -->
+			<div class="content" id="services">
+
+				<div class="panel">
+					<div class="wrapper wrapper-xs">
+						<div class="wrap">
+							<h2>Need any help?</h2>
+							<p>Hey, guess what? I'm currently a free agent! So maybe there's something I can help you with.</p>
+							<p>Quick heads up—I'm going to list my skills using flowery buzzwords and boilerplate icons. I know, I know, but I just couldn't resist. To make things easier, though, I will restate them underneath in plain English.</p>
+							<ul id="skills">
+								<li>
+									<span><i class="fi-2 flaticon-typewriter"></i></span>
+									<sup><em>Storytelling</em><strong>Writing</strong></sup>
+									<a class="mask skillToggle" href="#writing">&nbsp;</a>
+								</li>
+								<li>
+									<span><i class="fi-2 flaticon-light-bulb"></i></span>
+									<sup><em>Growth Hacking</em><strong>Marketing</strong></sup>
+									<a class="mask skillToggle" href="#marketing">&nbsp;</a>
+								</li>
+								<li>
+									<span><i class="fi-2 flaticon-paint"></i></span>
+									<sup><em>Design Thinking</em><strong>Web/Graphic Design</strong></sup>
+									<a class="mask skillToggle" href="#design">&nbsp;</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Contact -->
+			<div class="panel product" id="contact">
+				<section class="title scrollme animateme" data-when="view" data-from="1" data-to="0.15" data-opacity="0" data-translatex="0" data-rotatez="0">
+					<h2>Reach out.</h2>
+					<sup>Currently based out of <strong>Toronto</strong> and <strong>LA</strong>.</sup>
+				</section>
+				<div class="wrapper wrapper-xs scrollme animateme"  data-when="view" data-from="1" data-to="0.15" data-opacity="0" data-translatex="0" data-rotatez="0">
+					<div class="wrap">
+						<form action="inc/mailer.php" method="post">
+							<input id="name" class="input" name="name" type="text" placeholder="Name" />
+							<input id="email" class="input" name="email" type="text" placeholder="Email" />
+							<input id="subject" class="input" name="subject" type="text" placeholder="Subject" />
+							<textarea id="message" class="input" name="message" placeholder="Type your message here..."></textarea>
+							<div class="submit">
+								<button value="send" type="submit">Send</button>
+							</div>
+						</form>
+					</div>
+					<div class="wrap">
+						<img class="section-icon" src="images/icons/toronto-icon.png" />
+					</div>
+				</div>
+			</div>
+			<div class="blank">&nbsp;</div>
+			<footer>
+				<div class="content">
+					<section class="title">
+						<h2>Connect with me socially.</h2>
+					</section>
+					<nav class="social">
+						<ul class="grid">
+							<li><a href="https://twitter.com/peteralbertweir"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="https://ca.linkedin.com/in/peteralbertweir"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.instagram.com/peteralbertweir/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="http://www.imdb.com/name/nm3229829/?ref_=fn_al_nm_1"><i class="fa fa-imdb" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.quora.com/profile/Peter-Weir-3"><i class="fa fa-quora" aria-hidden="true"></i></a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="content">
+					<nav class="outbound-menu">
+						<ul>
+							<li><a class="iframe-popup" href="inc/resume/peter_albert_weir_resume_2018.pdf"><span class="entypo-doc-text"></span>Resume</a></li>
+							<li><a href="http://www.ryerson.ca/graduate/digitalmedia/studentbios/2016-2017/weir_peter/" target="_blank"><span class="entypo-user"></span>MDM Profile</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="content">
+					<div class="wrap">
+						<div class="copy">&copy;2018 Peter A. Weir all rights reserved (or whatever)</div>
+					</div>
+				</div>
+			</footer>
+			<nav class="fixed-menu">
+				<ul>
+					<li class="home-nav">
+						<a class="smooth" href="#home"><i class="fa fa-paw" aria-hidden="true"></i></a>
+					</li>
+					<li class="sidebar-container">
+						<a><i class="fa fa-bars" aria-hidden="true"></i></a>
+						<ul class="sidebar">
+							<li class="sidebar-header">
+								<span class="brand">Peter A. Weir</span>
+							</li>
+							<li>
+								<span><a class="smooth" href="#about">About</a></span>
+							</li>
+							<li>
+								<span><a class="smooth" href="#work">Work</a></span>
+							</li>
+							<li>
+								<span><a class="smooth" href="#services">Services</a></span>
+							</li>
+							<li>
+								<span><a class="smooth" href="#contact">Contact</a></span>
+							</li>
+							<li class="sidebar-social">
+								<a href="https://twitter.com/peteralbertweir"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+								<a href="https://ca.linkedin.com/in/peteralbertweir"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+								<a href="https://www.instagram.com/peteralbertweir/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								<a href="http://www.imdb.com/name/nm3229829/?ref_=fn_al_nm_1"><i class="fa fa-imdb" aria-hidden="true"></i></a>
+								<a href="https://www.quora.com/profile/Peter-Weir-3"><i class="fa fa-quora" aria-hidden="true"></i></a>
+							</li>
+							<li class="sidebar-footer">
+								<a class="iframe-popup" href="inc/resume/peter_albert_weir_resume_2018.pdf">Resume <span class="entypo-doc-text"></span></a>
+								<a class="smooth" href="#contact">MDM Profile <span class="entypo-user"></span></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- Skill Popups -->
+
+			<div id="writing" class="mfp-hide popup-modal">
+				<div class="slide">
+			   		<h3><span>Articles/Blog Posts</span></h3>
+					<div class="wrap">
+						<p>As someone whose background includes way too much content marketing, I am well-acquainted with the norms and nuances of quality writing. You could call me the Ernest Hemingway of corporate blogging. All I need is a little rundown of your audience, a sense of your goals, and what you’re hoping to ultimately convey in the message. (This will help me devise strong, competitive keywords that don't feel synthetic if you know what I mean.)</p>
+						<p>Seriously though, don’t worry about the tone, pacing, and formality—I’ll examine your existing posts and figure it out for myself.</p>
+					</div>
+				</div>
+			  	<div class="slide">
+					<h3><span>Copywriting</span></h3>
+					<div class="wrap">
+						<p>Imagine this: a startup is trying to redesign the bike helmet, and they’ve approached me for an upcoming campaign. But this isn’t a design problem. It never was. It’s a wariness thing. A stigma that needs to be destigmatized. So, I put the pen to the paper and fire out: <em>Better safe than sexy</em>.</p>
+						<p>Not sure if that’s been done before, but it’s pretty decent, no? Anyway, I’m rather comfortable with producing copy and virtually anything related to messaging. Be it for press releases, weekly newsletters, print/digital campaigns, social media, web content, internal communications—literally anything. Better safe than sexy. Not. Too. Bad.</p>
+					</div>
+			  	</div>
+				<div class="slide">
+					<h3><span>Scriptwriting</span></h3>
+			    	<div class="wrap">
+						<p>You know what my proudest accomplishment is? Something I’ve dreamed of doing since 1999, when, as a 7 year-old boy, I saw <em>Space Jam</em> for the first time? Something I’ve grappled with for over a decade, trying and failing only to try and fail again? Write a screenplay. And in June, 2017, I laid my fingers on the keyboard and typed the following words: <u>THE END</u>. Yup, I had finally completed my very first, totally-original, feature-length screenplay. Prior to that fateful day, I had read dozens of books on the art of screenwriting, but it wasn’t until I actually started pumping out dialogue that I truly understood what it takes.</p>
+						<p>I can be your second pair of eyes, your doctor, your narrative guru. I can deliver scripts for lowly commercials, how-to videos, or even episodic television. I mean, I’m no Blake Snyder or Shonda Rhimes, but my optics are pretty darn good.</p>
+					</div>
+			  	</div>
+			</div>
+
+			<div id="marketing" class="mfp-hide popup-modal">
+				<div class="slide">
+			   		<h3><span>Branding</span></h3>
+					<div class="wrap">
+						<p>Like a young child in a room full of Lego, I relish the chance to build a brand, from the ground up, layer by layer, brick by brick. Even if there’s no foundation whatsoever, I’m happy to—wait a minute. Now that I think about it, the less in place the better. Such as, you know, the absence of a core identity, including something as basic as a name.</p>
+						<p>I’ll help establish all of the necessities, both visual and, uh, not visual: colour scheme, logo, tagline, a mission/vision/values statement, the freaking coat of arms, if you will. Or the elements that shape your brand’s spirit, like the messaging, attitude, and general flavour. Everything that’s required to instill even just a penny of brand equity. Because this kind of stuff excites the hell out of me, so let’s have some fun.</p>
+					</div>
+				</div>
+			  	<div class="slide">
+					<h3><span>Concept Development</span></h3>
+					<div class="wrap">
+						<p>One of my favourite activities is logging new ideas. Through my concept and venture journal, I have documented tens upon tens of different ideas, fleshing them out over time, making edits here and there—the whole nine yards. No matter how big or small, whether it’s a new app, a brick and mortar business, or a podcast series, no idea is a bad idea. That is, unless real, everyday people say otherwise.</p>
+						<p>I find great enjoyment in appraising ideas. Should you be in need of some market validation, lends me your thoughts and I’ll challenge them from every angle.</p>
+					</div>
+			  	</div>
+				<div class="slide">
+					<h3><span>Onscreen Work</span></h3>
+					<div class="wrap">
+						<p>Believe it or not, but once upon a time, this young man dreamed of becoming a proper, honest-to-goodness, Hollywood-gaming actor. I should clarify: a screen actor. I’m no theatre-dwelling thespian. I’d like to be, but I don’t have the gumption quite yet. (That's why I signed up for improv classes earlier this year. An experience that, aside from being tremendously fun and enriching, has ingited my passion anew.)</p>
+						<p>All of this to say, I’m decently comfortable in front of the camera. You know, like a Millennial incarnation of Ryan Seacrest. Hosting, moderating, or even reciting dialogue and straight up pretending.</p>
+					</div>
+			  	</div>
+			</div>
+
+			<div id="design" class="mfp-hide popup-modal">
+				<div class="slide">
+					<h3><span>Web Design/Development</span></h3>
+					<div class="wrap">
+						<p>These past few years have taught me a lot about web design and development. Namely, that it’s practically impossible to know enough. Because there’s always—ALWAYS—something new, something more, or something different to learn. Anyway, I’m well-versed in the fundamentals of front-end design. HTML, CSS, JavaScript/jQuery, some PHP, you know, you know.</p>
+					</div>
+			  	</div>
+			  	<div class="slide">
+					<h3><span>UX/UI Design</span></h3>
+					<div class="wrap">
+						<p>I completed a Masters of Digital Media, ok? Trust me on this one. I did specialize in UX design, after all. So I must know what I’m doing!</p>
+						<p>Joking aside, my graduate thesis explored the confluence of UX design and electronic word-of-mouth. I have pored over every research paper, industry report, and academic study there is on the topic. Heck, my graduate project involved designing a mobile application that is perfectly suited to the overtones and undertones of contemporary UX. In any case, I am more than happy to assist with any related needs.</p>
+					</div>
+			  	</div>
+				<div class="slide">
+					<h3><span>Graphic Design</span></h3>
+					<div class="wrap">
+						<p>Although I've spent much of my life flirting with Photoshop, Illustrator, and yes, InDesign, I never really considered myself a pro. Just adept. But not anymore.</p>
+						<p>Since March of 2018, I have dramatically broadened my understanding of graphic design. And like any craft, I did so by doing. To see what I'm alluding to, check out the <a id="close-test" class="smooth mfp-close-test" href="#work">Birthday Movie Posters</a> project under my portfolio.</p>
+					</div>
+			  	</div>
+			</div>
+
+			<!-- Poster Gallery -->
+
+			<div id="gallery-1" class="hidden">
+				<a href="images/work/design/Michael_S.jpg" title="Big Trouble in Little Armenia">Big Trouble in Little Armenia</a>
+				<a href="images/work/design/Tegan_D.jpg" title="Along Came Zacky">Along Came Zacky</a>
+				<a href="images/work/design/Evan_C.jpg" title="Chance Time">Chance Time</a>
+				<a href="images/work/design/Julia_B.jpg" title="All the Incredible Friends">All the Incredible Friends</a>
+				<a href="images/work/design/Mookie.jpg" title="Jurassic Bark">Jurrasic Bark</a>
+				<a href="images/work/design/Adam_B.jpg" title="Premium Crush">Premium Crush</a>
+				<a href="images/work/design/Katie_S.jpg" title="Twenty Five">Twenty Five</a>
+				<a href="images/work/design/Chase_K.jpg" title="Angels in the High Chair">Angels in the High Chair</a>
+				<a href="images/work/design/Margo_J.jpg" title="Margo">Margo</a>
+				<a href="images/work/design/Annie_C.jpg" title="The Whisper Singer">The Whisper Singer</a>
+				<a href="images/work/design/Martin_R.jpg" title="North Bay 2 North Delhi">North Bay 2 North Delhi</a>
+				<a href="images/work/design/Zack_A.jpg" title="Barley and Me">Barley & Me</a>
+				<a href="images/work/design/Nigel_A.jpg" title="The King of Beans Movie">The King of Beans Movie</a>
+				<a href="images/work/design/Julia_P.jpg" title="A Belly Full of Jelly">A Belly Full of Jelly</a>
+				<a href="images/work/design/Guillermo_G.jpg" title="Finding Memo">Finding Memo</a>
+				<a href="images/work/design/McKenzie_T.jpg" title="Dune Raider">Dune Raider</a>
+				<a href="images/work/design/Laura_K.jpg" title="All Paws on Deck">All Paws on Deck</a>
+				<a href="images/work/design/Jeff_P.jpg" title="My Little Pinto">My Little Pinto</a>
+				<a href="images/work/design/Nick_F.jpg" title="Nicholas and the Forgotten Prophecy">Nicholas & the Forgotten Prophecy</a>
+				<a href="images/work/design/Ali_S.jpg" title="Happy Holidaze">Happy Holidaze</a>
+				<a href="images/work/design/Lewis_D.jpg" title="See Dede Run">See Dede Run</a>
+			</div>
+
+		</div>
+		<script src="js/alt.min.js"></script>
+		<script src="js/toggles.js"></script>
+    </body>
+</html>
